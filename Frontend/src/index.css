@@ -1,0 +1,63 @@
+/* ── Global Reset & Base ─────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Brand palette — deep navy + water teal */
+  --brand-navy:   #0d1b2a;
+  --brand-teal:   #1a9aa0;
+  --brand-teal-h: #158a90;
+  --brand-light:  #e8f4f5;
+
+  /* Card surface */
+  --card-bg:      rgba(255, 255, 255, 0.10);
+  --card-border:  rgba(255, 255, 255, 0.18);
+  --card-shadow:  0 8px 40px rgba(0, 0, 0, 0.45);
+
+  /* Inputs */
+  --input-bg:     rgba(255, 255, 255, 0.08);
+  --input-border: rgba(255, 255, 255, 0.25);
+  --input-focus:  #1a9aa0;
+
+  /* Text on auth pages (over video) */
+  --auth-text:       #f0f6f7;
+  --auth-label:      rgba(240, 246, 247, 0.75);
+  --auth-muted:      rgba(240, 246, 247, 0.55);
+
+  /* Dashboard */
+  --dash-bg:      #f0f6f7;
+  --dash-card:    #ffffff;
+  --dash-text:    #0d1b2a;
+  --dash-muted:   #5a7a82;
+  --dash-accent:  #1a9aa0;
+  --dash-shadow:  0 2px 16px rgba(13, 27, 42, 0.08);
+
+  /* Feedback */
+  --color-error:   #ff5c5c;
+  --color-success: #34c98a;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--brand-navy);
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  display: block;
+  text-align: left;
+}
